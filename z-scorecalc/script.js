@@ -28,5 +28,5 @@ document.getElementById('hitung').addEventListener('click', function() {
         zScore = 0; // Nilai sama dengan mean
     }
 
-    document.getElementById('hasil').innerText += `\nZ-Score: ${zScore.toFixed(2)}`;
+    document.getElementById('hasil').innerText += `: ${zScore.toFixed(2)} \n`;
 });
