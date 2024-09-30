@@ -27,6 +27,7 @@ document.getElementById('hitung').addEventListener('click', function() {
     } else {
         zScore = 0; // Nilai sama dengan mean
     }
-
-    document.getElementById('hasil').innerText += `: ${zScore.toFixed(2)} \n`;
+document.getElementById('hasil').innerText = ''; 
+    document.getElementById('hasil').innerText += `Z-Score: ${zScore.toFixed(2)} \n`;
 });
+                                            
