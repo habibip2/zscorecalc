@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Hitung Z-Score Balita</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Hitung Z-Score Balita</h1>
+        
+        <label for="jenis">Pilih Jenis Kelamin:</label>
+        <select id="jenis">
+            <option value="laki-laki">Laki-laki</option>
+            <option value="perempuan">Perempuan</option>
+        </select>
+
+        <label for="usia">Masukkan Usia (bulan):</label>
+        <input type="number" id="usia" placeholder="1-60" min="1" max="60">
+
+        <label for="indikator">Pilih Indikator:</label>
+        <select id="indikator">
+            <option value="bb_u">BB/U</option>
+            <option value="tb_u">TB/U</option>
+            <option value="pb_u">PB/U</option>
+			<option value="lika_u">LIKA/U</option>
+			<option value="lila_u">LILA/U</option>
+        </select>
+
+        <label for="nilai">Masukkan Nilai:</label>
+        <input type="number" id="nilai" placeholder="Masukkan nilai...">
+
+        <button id="hitung">Hitung Z-Score</button>
+
+        <h2 id="hasil"></h2>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
